@@ -1,0 +1,77 @@
+/*Este es el selector universal, representa
+a todas las etiquetas html incluida el body
+por l oque se toda propeidad escrita aqui se aplica en todas las etiquetas*/
+
+*{
+    margin: 0;/*margenes de cer*/
+    padding:0;/*margenes internos de*/
+
+}
+/*Esto se hace porque por defecto, cada navegador establece propiedades
+a las etiquetas y con esto se las quitamos, par aque la pagina se mas compatible con cualquier navegador*/
+
+body{/*Cuerpo de la pagina*/
+    background-color:rgb(190, 197, 197);/*Color de fondo*/
+}
+
+header, .main, footer{
+    width: 90%;/*ancho del 90% de la pagina*/
+    max-width: 1000px;/*ancho maximo*/
+    margin: 20px auto;/*centrar las secciones de manera que tengan 20 pixeles por lado*/
+}
+
+/*estilos para la barra de navegacion*/
+header nav{
+    background-color: rgb(151, 167, 161);/*Color de fondo*/
+    overflow: hidden;/*oculta los excedentes de las caja que no se pueden mostrar*/
+}
+
+header nav ul{
+    list-style: none;/*quitar viñetas a la lista porque van a ser botones*/
+}
+
+header nav ul li{
+    float:left;/*todos los botones se alinean hacia la izquierda*/
+}
+
+header nav ul li a{
+    /*estilo de los links de cada boton*/
+    padding: 10px 20px;/*margen interno*/
+    /*10 pixeles arriba y abajo y 20 pixeles derecha e izquierda*/
+    display: block;/*mostrar los links como cajas*/
+    color:black;/*color del texto blanco*/
+    text-decoration: none;/*quittar el subrayado a los links*/
+}
+
+header nav ul li a:hover{
+    /*cambiar de color al pasar el mouse*/
+    background-color:rgb(184, 182, 182);
+}
+
+.main .articles{
+    width: 68.5%; /*ancho en porcentje a la seleccion*/
+    float: left;/*alenaecion a la izquierda*/
+    margin-right: 1.5%;/*margen derecho*/
+}
+
+.main .articles article{
+    padding: 20px;/*margen interno de 20px*/
+    background-color: rgb(151, 167, 161);
+    margin-bottom: 20px;/*margen inferior de 20px*/
+}
+
+aside{/*Estilos de la barra lateral*/
+    width: 30%;/*ancho del 30%*/
+    background-color: rgb(151, 167, 161);
+    float: left;/*alineacion a la izquierda*/
+    padding: 20px;
+    box-sizing: border-box;/*hace que el ancho de la barra lateral no se modifique aunque se le agregue otros elementos*/
+}
+
+footer{/*estilos del pie de pagina*/
+    background-color: black;
+    color: white;
+    clear: both;
+    padding: 10px 0px;/*10px para arriba y para abajo*/
+    text-align: center;/*alineacion de texto centrada*/
+}
